@@ -29,7 +29,7 @@ post '/museums' do
   end
 end
 #
-get("/museum/:id") do
+get("/museums/:id") do
   @museum = Museum.find(params.fetch("id").to_i)
   erb(:museum)
 end

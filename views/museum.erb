@@ -13,7 +13,16 @@
 </form>
 </br>
 
+<h3><%= Add artwork to <%= @museum.name() %> </h3>
 
+<form action="/museums" method="post">
+  <input id="museum_id" name="museum_id" type="hidden" value="<%= @museum.id() %>">
+
+  <label for="name">Name of artwork:</label>
+  <input id="name" name="name" type="text">
+
+  <button type="submit">Add artwork</button>
+</form>
 
 
 
