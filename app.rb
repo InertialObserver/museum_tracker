@@ -18,7 +18,7 @@ get('/museum') do
   erb(:museum)
 end
 
-post '/museums' do
+post ('/museums') do
   name = params['name']
   location = params['location']
   @museum = Museum.new({ name: name, location: location, id: nil })
