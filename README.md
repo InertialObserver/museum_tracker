@@ -4,11 +4,9 @@ Contributor(s):
 
 Jessi Iler (https://github.com/InertialObserver)
 
-Date: Started June 12th, 2015
-
 Installation:
 
-Build database in Postgres:
+# Build database in Postgres:
 
 # psql
 username=# CREATE DATABASE museum_tracker;
@@ -28,7 +26,13 @@ Usage
 
 To use the app:
 
-Run ruby app.rb Navigate in your browser to localhost:4567 and enjoy!!
+# Setup instructions:
+    # Clone git repo
+    # Use psql info above to set up the database
+    #ruby 2.2.0p0 (2014-12-25 revision 49005) [x86_64-darwin14]
+    # Retrieve the included Gemfile and Run the following command: bundle install
+    # In bash run: ruby app.rb
+    #Navigate in your browser to localhost:4567
 
 Bug reports
 
