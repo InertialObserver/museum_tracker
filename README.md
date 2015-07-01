@@ -1,12 +1,12 @@
-Museum Tracker
+# Museum Tracker
 
 Contributor(s):
 
 Jessi Iler (https://github.com/InertialObserver)
 
-Installation:
+# Installation:
 
-# Build database in Postgres:
+ Build database in Postgres:
 
 # psql
 username=# CREATE DATABASE museum_tracker;
