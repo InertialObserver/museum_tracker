@@ -13,7 +13,7 @@ get('/') do
   erb(:index)
 end
 
-get('/museum') do
+get('/museums') do
   @museums = Museum.all
   erb(:museum)
 end
@@ -23,7 +23,7 @@ post ('/museums') do
   location = params['location']
   @museum = Museum.new({ name: name, location: location, id: nil })
   if @museum.save
-    redirect("/tasks/".concat(@museum.id().to_s()))
+    redirect("/museums/".concat(@museum.id().to_s()))
   else
     erb(:museum)
   end
@@ -33,9 +33,7 @@ get("/museums/:id") do
   @museum = Museum.find(params.fetch("id").to_i)
   erb(:museum)
 end
-#
-#
-#
-# get('/artwork') do
-#   erb(:artwork)
-# end
+
+get('/artwork') do
+  erb(:artwork)
+end
