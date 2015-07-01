@@ -6,8 +6,8 @@ Jessi Iler (https://github.com/InertialObserver)
 
 # Installation:
 
- Build database in Postgres:
- psql
+Build database in Postgres:
+psql
 username=# CREATE DATABASE museum_tracker;
 username=# \c museum_tracker;
 museum_tracker=# CREATE TABLE museums (id serial PRIMARY KEY, name varchar, location varchar);
